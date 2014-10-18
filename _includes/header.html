@@ -1,11 +1,9 @@
-<!-- 导航条 -->
 <header>
     <ul class="nav">
-        <li {% if include.param == "1" %} class="active"{%  endif %}><a href="#">首页</a></li>
-        <li><a href="#">文章</a></li>
+        <li{% if include.param == "1" %} class="active" {%  endif %}><a href="{{ site.baseurl }}">首页</a></li>
+        <li{% if include.param == "2" %} class="active" {%  endif %}><a href="#">文章</a></li>
         <li><center><img src="/img/onewater.jpg" title="ONEWateR"></center></li>
-        <li><a href="#">个人</a></li>
-        <li><a href="#">关于</a></li>
+        <li{% if include.param == "3" %} class="active" {%  endif %}><a href="#">个人</a></li>
+        <li{% if include.param == "4" %} class="active" {%  endif %}><a href="#">关于</a></li>
     </ul>
 </header>
-

@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>{{ page.title }} | {{ site.title }}</title>
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/css/main.css" rel="stylesheet" media="screen">
+    </head>
+    <body>
+        {% include header.html param=page.postion: %}
+        <!-- 内容 -->
+        <div class="warp">
+            <div class="content">
+                {{ content }}
+            </div>
+        </div>
+        <!-- 底部 -->
+        {% include footer.html %}
+    </body>
+</html>
