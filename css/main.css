@@ -46,6 +46,8 @@ header img {
     margin-right: 36px;
     margin-bottom: 18px;
     display: inline-block;
+    padding-bottom: 4px;
+    border-bottom: 2px solid rgba(0,0,0,0);
 }
 
 .nav li a {
@@ -78,6 +80,12 @@ header img {
     background: #f5f5f5;
     min-height: 600px;
     padding: 48px 0;
+}
+
+.box {
+    background: #FFF;
+    box-shadow: 0 0 2px rgba(0,0,0,0.2);
+    border-radius: 2px;
 }
 
 .preview {
@@ -116,7 +124,6 @@ header img {
     padding: 14px;
     margin-bottom: 36px;
     box-shadow: 0 0 2px rgba(0,0,0,0.2);
-   
     border-radius: 2px;
 }
 
@@ -175,4 +182,27 @@ footer {
 
 .post-content a:hover, a:focus, a:active {
     text-decoration: underline;
+}
+
+.archives {
+    padding: 24px 32px;
+}
+
+.archives h2 {
+    padding-bottom: 0.3em;
+    margin-bottom: 14px;
+    margin-top: 0px;
+    border-bottom: 1px solid #eee;
+}
+
+.archives ul {
+    padding-left: 2.5em;
+    margin-top: 18px;
+    margin-bottom: 24px;
+    line-height: 1.8em
+}
+
+.archives ul li small {
+    margin-left: 6px;
+    font-style: italic;
 }
