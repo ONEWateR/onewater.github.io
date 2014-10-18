@@ -10,15 +10,7 @@
     </head>
     <body>
         <!-- 导航条 -->
-        <header>
-            <ul class="nav">
-                <li class="active"><a href="#">首页</a></li>
-                <li><a href="#">文章</a></li>
-                <li><center><img src="img/onewater.jpg" title="ONEWateR"></center></li>
-                <li><a href="#">个人</a></li>
-                <li><a href="#">关于</a></li>
-            </ul>
-        </header>
+        {% include header.html param="1" %}
         <!-- 内容 -->
         <div class="warp">
             <div class="content">
@@ -26,9 +18,9 @@
                     {% for post in site.posts %}
                         <li>
                             <div class="preview">
-                                <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+                                <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
                                 <p class="time">{{ post.date | date: '%Y/%m/%d' }}</p>
-                                <p>{{ post.excerpt }}</p>
+                                <div class="exceprt">{{ post.excerpt }}</div>
                             </div>
                         </li>
                     {% endfor %}
@@ -36,8 +28,6 @@
             </div>
         </div>
         <!-- 底部 -->
-        <footer>
-                <center>Designed By ONEWateR</center>
-        </footer>
+        {% include footer.html %}
     </body>
 </html>

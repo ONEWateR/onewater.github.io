@@ -58,6 +58,7 @@ header img {
     color: #FFF;
     text-decoration: none;
 }
+
 .nav li a:hover{
     color: #FFF;
     background: #38b0fc;
@@ -66,6 +67,11 @@ header img {
 .nav .active {
     padding-bottom: 4px;
     border-bottom: 2px solid #38b0fc;
+}
+
+.nav li.active a:hover {
+    background: none;
+    color: #FFF;
 }
 
 .warp {
@@ -78,15 +84,15 @@ header img {
     line-height: 24px;
 }
 
-.preview h3 a {
+.preview h2 a {
     text-decoration: none;
 }
 
-.preview h3 a:link,a:visited {
+.preview h2 a:link,a:visited {
     color: #556;
 }
 
-.preview h3 a:hover {
+.preview h2 a:hover {
     color: #38b0fc;
 }
 
@@ -112,6 +118,10 @@ header img {
     box-shadow: 0 0 2px rgba(0,0,0,0.2);
    
     border-radius: 2px;
+}
+
+.article .exceprt * {
+    font-size: 14px;
 }
 
 footer {
@@ -143,5 +153,26 @@ footer {
 
 .post-content {
     margin-top: 18px;
-    line-height: 1.5em;
+    line-height: 1.6em;
+}
+
+.post-content h2 {
+    padding-bottom: 0.3em;
+    font-size: 1.75em;
+    line-height: 1.225;
+    margin-top: 1em;
+    margin-bottom: 6px;
+}
+
+.post-content ul {
+    padding-left: 2em;
+}
+
+.post-content a {
+    color: #4183c4;
+    text-decoration: none;
+}
+
+.post-content a:hover, a:focus, a:active {
+    text-decoration: underline;
 }
